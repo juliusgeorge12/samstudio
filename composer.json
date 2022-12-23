@@ -1,0 +1,22 @@
+{
+    "name": "julius-george/stu_photo",
+    "description": "A photography studio website made with php",
+    "type": "project",
+    "license": "Mit",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/" ,
+            "Facades\\" : "Facades/" ,
+            "support\\" : "support/" ,
+             "PHPMailer\\PHPMailer\\" : "vendor/phpmailer/phpmailer/src//"
+        } ,
+        "files" : ["support/helper/helper.php"]
+    },
+    "authors": [
+        {
+            "name": "julius george(backend dev) and henry(frontend dev)"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}

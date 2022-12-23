@@ -1,0 +1,9 @@
+    Options -Indexes
+    ReWriteEngine On
+     ReWriteBase /
+      ##RewriteCond %{HTTP_HOST} ^samstudio\.com$ [NC]
+     ##ReWriteRule ^(.*)$ http://www.samstudio.com/$1 [R=301,L]
+     ReWriteCond %{REQUEST_FILENAME} !-d
+     ReWriteCond %{REQUEST_FILENAME} !-f 
+     ReWriteRule ^(.+)$ index.php [QSA,L]
+    
