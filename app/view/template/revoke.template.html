@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <base href="@base-url">
+ <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"-->
+   <link rel="stylesheet" href="https://samstudio.heroku.com/public/fontawesome-free-5.15.3-web/css/all.css">
+  <link rel="stylesheet" href="../public/css/makPriv.css">
+  <title>Revoke user privilege</title>
+</head>
+<body>
+
+    <div class="nav">
+     <div class="nav-content">
+
+        <div class="search"><input type="search" value="search" name="" id=""><input type="submit" value="search"></div>  
+     </div>
+    </div>
+
+    <div class="contents">
+      <div class="side-bar">
+        <ul>
+                                    
+          <a style="text-decoration: none;font-size:1.3rem;margin-left:9px;" href="dashboard"><h1 style="color:#fff;margin-bottom:10%;font-size:1.3em;">Dash Board</h1> </a>
+          
+         <li><i class="fas fa-home"></i><a href="admin/dashboard">Home</a></li>
+         <li>  <i class="far fa-smile"  aria-hidden="true"></i><a href="admin/team"style="margin-bottom:10%">Team</a></li>
+         <li><i class="fas fa-cube"  aria-hidden="true"></i><a href="admin/task"style="margin-bottom:10%">Task</a></li>
+         <li><i class="far fa-file-alt"  aria-hidden="true"></i><a href="admin/task" >Project</a>
+           <ul>
+              <li><a href="admin/recent">Manage HomePage</a></li>
+               <li><a href="admin/users">Manage Users</a></li>
+              <li><a href="admin/manage/profile">Manage profile</a>
+            </li>
+           </ul>
+           </li>
+         <li>  <i class="far fa-bell"  aria-hidden="true"></i><a href="admin/notification"style="margin-bottom:10%">Notifications<sup>@notif</sup> </a</li>
+          <li> <i class="fas fa-cog"  aria-hidden="true"></i><a href="admin/setting">Setting</a></li>
+          <li> <i class="fas fa-power-off"  aria-hidden="true"></i><a href="https://samstudio.heroku.com/admin/logout"> Logout</a></li>
+        
+     </ul>
+      </div>
+      <div class="main-contents">
+<div class="content">
+  <div class="form">
+      <div class="title"><strong>mark the  privilleges you want to <br> revoke from the user</strong></div>
+    <form action="admin/user/revoke/@user_id" method="post">
+      <input type="hidden" name="csrf_token" value="@csrf">
+      <div class="data">
+        <div class="check"><input type="checkbox" name="privilege[]" id="" value="create">Create</div>
+        <div class="check"><input type="checkbox" name="privilege[]" id="" value="edit">Edit</div>
+        <div class="check"><input type="checkbox" name="privilege[]" id="" value="delete">Delete</div>
+        <div class="check"><input type="checkbox" name="privilege[]" value="add_user">add_user </div>
+        <div class="check"><input type="checkbox" name="privilege[]" id="" value="delete_user">Delete User</div>
+        <div class="check"><input type="checkbox" name="privilege[]" id="" value="special">Special</div>
+        <p class="form-error">@privErr</p>
+     </div>
+     <div class="btn">
+       <div class="input-btn">
+         <input type="password" name="password" id="" placeholder="enter your password">
+         <p class="form-error">@pswErr</p>
+         <input type="submit" value="Revoke Privilege">
+       </div>
+     </div>
+    </form>
+  </div>
+</div>
+      </div>
+    </div>
+ 
+</body>
+</html>

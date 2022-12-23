@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <base href="@base-url">
+<link rel="stylesheet" href="public/css/secondform.css">
+<title>Document</title>
+</head>
+<body>
+<nav>
+<div class="social">
+<div class="x"><span>Emergency Line:</span>+234-91-5567-8900</div>                                      
+<div class="x"><span>Location:</span>Awka, Nigeria</div>                                      
+<div class="x"><span>Mon-Sat:</span>9.30am To 7.00pm</div>    
+</div>  
+<div class="mobile-first">
+<label for=""class="logo-mobile">LOGO</label>    
+<div class="toggle-menu">
+<span></span>                                    
+<span></span>                                    
+<span></span>                                    
+</div>
+<div class="login-content-moblie">
+<a href="">login</a>                                    
+</div> 
+</div>
+
+<ul class="navigation">
+<label for=""class="logo">LOGO</label>                                      
+<li> <a href="https://samstudio.heroku.com">HOME</a></li>
+<li> <a href="artist/about">ABOUT THE ARTIST</a></li>
+<li> <a href="service">SERVICES</a></li>
+<li> <a href="blog">BLOG</a></li>
+<li> <a href="contact">CONTACT</a></li>
+<input type="submit" value="--Thank for coming--">
+
+
+</ul>   
+
+</nav>
+<div class="glober-wrap">
+<div class="center_text">
+  <div class="text">
+ <div class="main-text">   <h1>Fill in <span>the form below before proceeding..</span> </h1></div>
+  </div>
+  <form action="">
+    <div class="input">
+        <input type="text" name="" id="" placeholder=" First Name">
+        <input type="password" name="" id="" placeholder="Second Name">
+    </div>
+    
+    <div class="input">
+        <input type="email" name="" id="" placeholder="enter your State">
+        <input type="password" name="" id="" placeholder="Curresnt Address">
+    </div>
+    
+    <div class="input">
+        <input type="email" name="" id="" placeholder="party location adress ">
+        <input type="password" name="" id="" placeholder="WhatsApp Contact">
+    </div>
+    
+    <div class="input">
+        <input type="email" name="" id="" placeholder="enter your email">
+        <input type="password" name="" id="" placeholder="enter your password">
+    </div>
+    
+  
+      <div class="btn">                            
+           <button class="submit">Submit</button>                                   
+      </div>                                    
+  </form>                                   
+</div>
+
+</div>
+
+</body>
+
+
+<script>
+
+let tog=document.querySelector('.toggle-menu');
+let nav=document.querySelector('.navigation');
+tog.addEventListener('click',function(){
+tog.classList.toggle('active');   
+nav.classList.toggle('active')                              
+})
+
+function seta(e){
+document.getElementById('menu').classList.toggle('active');
+
+}
+
+</script>
+</html>

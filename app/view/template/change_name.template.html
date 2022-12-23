@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+      <head>
+        <meta charset="UTF-80">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+         
+        <title>
+                change your names
+        </title>
+        </head>
+        <body>
+                <div>
+                        <form action="admin/user/name/change" method="post">
+                                <input type="hidden" name="csrf_token" value="@csrf">
+                        <ul>
+                                
+                                <li>
+                                        <p>enter first name</p>
+                                        <input type="text" name="fname" placeholder="enter first name">
+                                        <p style="color: red; font-size: 14px;">@fnameErr</p>
+                                </li>
+                                <li>
+                                        <p>enter last name</p>
+                                        <input type="text" name="lname" placeholder="enter last name">
+                                        <p style="color: red; font-size: 14px;">@lnameErr</p>
+                                </li>
+                                <li>
+                                        <p>enter your password</p>
+                                        <input type="password" name="password" placeholder="enter your password">
+                                        <p style="color: red; font-size: 14px;">@pswErr</p>
+                                </li>
+                                <li>
+                                        <input type="submit" value="change name">
+                                </li>
+                        </ul>
+                        </form>
+                </div>
+        </body>
+        
+</html>

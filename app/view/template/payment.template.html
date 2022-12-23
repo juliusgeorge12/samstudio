@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <base href="@base-url">
+<link rel="stylesheet" href="asset/css/payment.css">
+<title>payment Section</title>
+</head>
+<body>
+                              
+
+<div class="payment-section">
+<div class="split-page">
+
+   <div class="dash">
+hello
+   
+   </div>                                 
+</div>
+<div class="split-page">
+    <div class="form">
+ <div class="payAmou">Payable Amount:&#160;#1,200 USD</div> 
+     <form action="payment.php" method="POST">
+    <div class="wrap-one">
+      <span style="color:black;">Card Number</span>
+      <input type="number" name="card_no" id="card-no" class="car_no" required>                                      
+    </div>
+    <div class="wrap">
+      <div class="mm"  style="display:flex; flex-direction:column;">
+          <span style="color:black;">Expire Month</span>
+          <select name="month" id="expi_month"  style=" width:90px;     height:30px; margin-right:2rem;outline:none;border:none  ">
+          <option value="jen">Jan</option>
+          <option value="jen">Feb</option>
+          <option value="jen">Mar</option>
+          <option value="jen">Apr</option>
+          <option value="jen">May</option>
+          <option value="jen">Jun</option>
+          <option value="jen">July</option>
+          <option value="jen">Aug</option>
+          <option value="jen">Sep</option>
+          <option value="jen">Oct</option>
+          <option value="jen">Nov</option>
+          <option value="jen">Dec</option>
+          </select>
+      </div> 
+      <div class="expi" style="display:flex; flex-direction:column;">
+         <span style="color:black;">Expiry Year</span> 
+         <select name="year"  id="ex_yr"   style=" width:90px;     height:30px; margin-right:2rem;outline:none;border:none ">
+          <option value="jen">2022</option>
+          <option value="jen">2023</option>
+          <option value="jen">2024</option>
+          <option value="jen">2025</option>
+          <option value="jen">2026</option>
+          <option value="jen">2027</option>
+          <option value="jen">2028</option>
+          </select>                                         
+      </div>      
+      <div class="cv"  style="display:flex; flex-direction:column;">
+          <span style="color:black;">CVV</span>
+          <input type="number" name="cvv" id="cw" class="cw"  placeholder="123" required>                                          
+      </div>                               
+    </div>
+    <div class="wrap-one">
+      <span style="color:black;">Name On Card</span>
+      <input type="text" name="nameOnCard" id="card-no" class="name_on_car" required>                                       
+    </div>
+    <input type="submit" name="submit" value="Pay Now" id="button">
+     </form>
+    </div>                                    
+</div>
+</div>
+</body>
+</html>
+<script>
+
+
+
+var name_on_car=document.getElementsByClassName('name_on_car');
+var button=document.getElementById('button');
+button.addEventListener('click', (e)=>{
+   e.preventDefault();
+  
+   if(document.querySelector(".car_no").length < 16 ){
+      alert("your digital card number should not be less than  16!");
+   }else if(document.querySelector(".car_no").length > 16 ){
+      alert("your digital card number should be greater than  16!");
+   }else if(document.querySelector(".cw").length > 3  ){
+      alert("wrong detail pls check ");
+   }
+   if(document.querySelector(".name_on_car").value =' '){
+      alert("pls input for card name ");
+   }
+});
+
+
+</script>
+
+<style>
+*{margin: 0%;padding: 0%;}
+
+ 
+
+    #button {
+        background-color: #0b9d8a;
+        color:#fff;
+      
+       
+        outline: none;
+        height: 45px;
+        width: 300px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        padding: 10px;
+margin-left: 6%;
+   
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        outline: none;
+        box-shadow: 2px 2px 30px rgb(0,0,0,0.1); 
+
+   }       
+*,html{
+    margin:0;
+    padding:0;  
+                             
+}
+
+.expi{
+   display:flex;
+   flex-direction:column;
+}
+.wrap-one{
+  display:flex;
+  flex-direction:column;                                      
+}
+.wrap{
+   display:flex;
+   flex-direction:row;
+      
+}
+   .payment-section{
+      display:grid;
+      grid-template-columns:60% 40%;
+      background-color:grey;  
+      height: 100vh;                         
+   }  
+   .form{
+    width: 400px;
+    overflow: hidden;
+      position: relative;
+      top:40px;                                     
+   }
+   form{
+   margin-top: 10px;
+     width:400px;
+     height:400px;
+     background-color:white;   
+     padding:20px;
+     border-radius:15px;    
+       
+     box-shadow:2px 2px 30px rgba(0,0,0,0.1);      
+     position: relative;                     
+   }      
+   form input,#month{
+      width:90px;   
+      height:30px;  
+      outline:none;
+      border:none;
+      pointer-events:pointer;
+      background-color: #eee;
+    padding: 5px;
+       margin-bottom: 29%;                          
+   }
+   #card-no{
+      width:300px;
+      margin-bottom:40px;                                     
+   }
+
+      .form .payAmou{
+
+      display: flex;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      margin: 0% auto;  
+      text-align: center;    
+      font-size: 1.2rem;
+      font-weight: 800;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color:rgb(24, 15, 15);                                
+               }
+   @media(max-width: 600px){
+      .payment-section{
+     display: flex;
+     flex-direction: column;                                
+   }  
+   .form{
+ 
+      top:0%;                                     
+   }
+ 
+   .do{
+      display:flex;
+      flex-direction:column;
+     margin:20px;
+     position:relative;
+     left:30%;
+     color:#fff;
+     margin-top:20%;
+   }
+   }
+</style>

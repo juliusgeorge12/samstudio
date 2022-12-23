@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="@base-url/admin">
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"-->
+   <link rel="stylesheet" href="../public/fontawesome-free-5.15.3-web/css/all.css">
+   <link rel="stylesheet" href="../public/css/trash.css">
+   <title>Admin dashboard</title>
+</head>
+<body>
+   @top_message
+   <div class="ad-darsh-board">
+      <div class="side-bar">
+       
+            <ul>
+                                    
+             <a style="text-decoration: none;font-size:1.3rem;margin-left:9px;" href="dashboard"><h1 style="color:#fff;margin-bottom:10%;font-size:1.3em;">Dash Board</h1> </a>
+             
+            <li><i class="fas fa-home"></i><a href="dashboard">Home</a></li>
+            <li>  <i class="far fa-smile"  aria-hidden="true"></i><a href="team"style="margin-bottom:10%">Team</a></li>
+            <li><i class="fas fa-cube"  aria-hidden="true"></i><a href="task"style="margin-bottom:10%">Task</a></li>
+            <li><i class="far fa-file-alt"  aria-hidden="true"></i><a href="task" >Project</a>
+              <ul>
+                 <li><a href="recent">Manage HomePage</a></li>
+                 <li><a href="users">Manage Users</a></li>
+                 <li><a href="manage/profile">Manage profile</a>
+               </li>
+              </ul>
+              </li>
+            <li>  <i class="far fa-bell"  aria-hidden="true"></i><a href="notification"style="margin-bottom:10%">Notifications<sup>@notif </sup> </a</li>
+            <li> <i class="fas fa-cog"  aria-hidden="true"></i><a href="setting">Setting</a></li>
+           <li> <i class="fas fa-power-off"  aria-hidden="true"></i><a href="@base-url/admin/logout">Logout</a></li>
+        </ul>
+      </div>
+
+      <div class="main-content">
+         <div class="content">
+               <div class="nav">
+                     <div class="search"><input type="search" value="search" name="" id=""><input type="submit" value="search"></div>
+                     <ul class="navigation">                             
+                        <li> <img src="@img" width="60px" height="60px" style="border-radius: 50%;"></i></li>
+                          </ul>     
+                  </div>
+                     <div class="main">
+
+                        <div class="title">
+                           <h1>@username</h1>
+                                </div>
+                        <div class="box-top">
+                              <div class="boxs">
+                               <div class="box-wrap">
+                                       <span class="ic"><i class="fas fa-archive" aria-hidden="true"></i></span>   
+                                       <div class="mini-wrap">
+                                        <strong>Account Balance</strong>                                       
+                                        <span>@balance</span>                                   
+                                       </div>
+                               </div>
+        
+                                 </div>
+                              <div class="boxs">
+                               <div class="box-wrap">
+                                       <span class="ic"><i class="fas fa-sync"  aria-hidden="true"></i></span>   
+                                       <div class="mini-wrap">
+                                        <strong>Pending</strong>                                       
+                                        <span>@pending</span>                                   
+                                       </div>
+                               </div>
+        
+                                 </div>
+                              <div class="boxs">
+                               <div class="box-wrap">
+                                       <span class="ic"><i class="fa fa fa-check-square"></i></i></span>   
+                                       <div class="mini-wrap">
+                                        <strong>Processed</strong>                                       
+                                        <span>@processed</span>                                   
+                                       </div>
+                               </div>
+        
+                              </div>
+                             </div>
+                             <div class="box-contents">
+                                 <div class="content-main">
+                                    <div class="content-dash-table">
+                                       <div class="dash-title"><strong>Recent activity</strong></div>
+                                       <table>
+                                             <thead>
+                                                <th>Project</th>
+                                                <th>Start date</th>
+                                                <th>End date</th>
+                                                <th>Team</th>
+                                                <th>Status</th>
+                                             </thead>
+                                             <tbody>
+                                                <tr>
+                                                   <td>White Wedding</td>
+                                                   <td>15,may,2022</td>
+                                                   <td>22, may,2022</td>
+                                                   <td>
+                                                         <div class="table-icon-img">
+                                                               <div class="icon-img">
+                                                                     <img src="../asset/img/9.jpg" alt="" srcset="">
+                                                                  </div>
+                                                                  <div class="icon-img">
+                                                                        <img src="../asset/img/gallery_item_1.png" alt="" srcset="">
+                                                                     </div>
+                                                                     <div class="icon-img">
+                                                                           <img src="../asset/img/15.jpg" alt="" srcset="">
+                                                                        </div>
+                                                            </div>
+
+                                                   </td>
+                                                   <td><span id="suc">On process</span></td>
+                                                  
+                                                </tr>
+                                                <tr>
+                                                   <td>Tradition Wedding</td>
+                                                   <td>15,may,2022</td>
+                                                   <td>22, may,2022</td>
+                                                   <td>
+                                                         <div class="table-icon-img">
+                                                               <div class="icon-img">
+                                                                     <img src="../asset/img/9.jpg" alt="" srcset="">
+                                                                  </div>
+                                                                  <div class="icon-img">
+                                                                        <img src="../asset/img/gallery_item_1.png" alt="" srcset="">
+                                                                     </div>
+                                                                     <div class="icon-img">
+                                                                           <img src="../asset/img/15.jpg" alt="" srcset="">
+                                                                        </div>
+                                                            </div>
+
+                                                   </td>
+                                                   <td><span id="suc">sucess</span></td>
+                                                  
+                                                </tr>
+                                                <tr>
+                                                   <td>White Wedding</td>
+                                                   <td>15,may,2022</td>
+                                                   <td>22, may,2022</td>
+                                                   <td>
+                                                         <div class="table-icon-img">
+                                                               <div class="icon-img">
+                                                                     <img src="../asset/img/9.jpg" alt="" srcset="">
+                                                                  </div>
+                                                                  <div class="icon-img">
+                                                                        <img src="../asset/img/gallery_item_1.png" alt="" srcset="">
+                                                                     </div>
+                                                                     <div class="icon-img">
+                                                                           <img src="../asset/img/15.jpg" alt="" srcset="">
+                                                                        </div>
+                                                            </div>
+
+                                                   </td>
+                                                   <td><span id="suc">On process</span></td>
+                                                  
+                                                </tr>
+                                              
+                                                <tr>
+                                                   <td>Tradition Wedding</td>
+                                                   <td>15,may,2022</td>
+                                                   <td>22, may,2022</td>
+                                                   <td>
+                                                         <div class="table-icon-img">
+                                                               <div class="icon-img">
+                                                                     <img src="../asset/img/9.jpg" alt="" srcset="">
+                                                                  </div>
+                                                                  <div class="icon-img">
+                                                                        <img src="../asset/img/gallery_item_1.png" alt="" srcset="">
+                                                                     </div>
+                                                                     <div class="icon-img">
+                                                                           <img src="../asset/img/15.jpg" alt="" srcset="">
+                                                                        </div>
+                                                            </div>
+
+                                                   </td>
+                                                   <td><span id="suc">sucess</span></td>
+                                                  
+                                                </tr>
+                                              
+                                             </tbody>
+                                          </table>
+                                    </div>
+                        
+                                 </div>
+                  </div>
+   </div>
+</body>
+<script>
+   const error = document.querySelector('.error-dialog');
+   setTimeout(() => {
+     error.style.display = "none";
+   } , 5000);
+</script>
+</html>
+          

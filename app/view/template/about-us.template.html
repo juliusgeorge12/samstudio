@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <base href="@base-url">
+ 
+ <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"-->
+   <link rel="stylesheet" href="https://samstudio.heroku.com/public/fontawesome-free-5.15.3-web/css/all.css">
+<link rel="stylesheet" href="public/css/ABOUT.css">
+<title>Edit about the user</title>
+</head>
+<body>
+
+<div class="glober-wrap">
+
+
+ <section>
+      <div class="admin-section">
+         <div class="admin-nav">
+                                               
+            <ul>
+               <a style="text-decoration: none;font-size:1.3rem;margin-left:9px;" href="admin/dashboard"><h1 style="color:#fff;margin-bottom:10%;font-size:1.3em;">Dash Board</h1> </a>
+             
+               <li><i class="fas fa-home"></i><a href="admin/dashboard">Home</a></li>
+               <li>  <i class="far fa-smile"  aria-hidden="true"></i><a href="admin/team"style="margin-bottom:10%">Team</a></li>
+               <li><i class="fas fa-cube"  aria-hidden="true"></i><a href="admin/task"style="margin-bottom:10%">Task</a></li>
+               <li><i class="far fa-file-alt"  aria-hidden="true"></i><a href="admin/task" >Project</a>
+                 <ul>
+                    <li><a href="admin/recent">Manage HomePage</a></li>
+                    <li><a href="admin/manage/profile">Manage profile</a>
+                    <li><a href="admin/users">Manage Users</a></li>
+                      </ul>
+                 </li>
+               <li>  <i class="far fa-bell"  aria-hidden="true"></i><a href="admin/notification"style="margin-bottom:10%">Notifications<sup>@notif</sup> </a</li>
+                 <li> <i class="fas fa-cog"  aria-hidden="true"></i><a href="admin/setting">Setting</a></li>
+           <li> <i class="fas fa-power-off"  aria-hidden="true"></i><a href="https://samstudio.heroku.com/admin/logout">Logout</a></li>
+        
+           
+            </ul>
+             </div>
+          
+             <div class="side-bar">
+               <nav>
+                  <div class="search"><input type="search" value="search" name="" id=""><input type="submit" value="search"></div>
+                  <ul class="navigation">                             
+                     <li> <img src="@img" width="60px" height="60px" style="border-radius: 50%;"></i></li>
+                       </ul>  
+                  
+                  </nav>
+
+                  <div class="container">
+                     <div class="wrap">
+                      <div class="j">
+                   <h1>Dash Board</h1><button id="ad">Artists Data</button>
+                        </div>
+                   <div class="box">
+                     <form action="admin/manage/profile" method="post" enctype="multipart/form-data">
+                     <input type="hidden" name="csrf-token" value="@crsf_token">
+                      <div class="box-top">
+                      <div class="latest">
+                     <label id="labe"for="">TELEPHONE NUMBER </label>
+                     <input type="number" name="telephone"   id="tit-work"src="" alt="" >
+                     <p class="form-error">@telephoneErr</p> 
+                      </div>
+                    
+                      <div class="latest">
+                    
+                     <label id="labe"for="">ABOUT ME WRITE UP </label>
+                     <textarea name="bio" id="tex" cols="30" rows="10"></textarea>
+                     <p class="form-error">@bioErr</p> 
+                     <br>&#160;
+                       <label id="labe"for="">ARTISTS IMAGE </label>
+                     <input type="file" name="profile_pic" id="tit-work"src="" alt="" >
+                     <p class="form-error">@picErr</p> 
+                     <br>&#160;
+                      </div>
+                      <input type="submit" id="submit-e" value="submit">
+                     </form>
+                     </div>
+                   </div>
+                  </div>
+                  </div>
+               </div>
+      </div>
+   </section>
+</div>
+</body>
+<script src="public/javascript/app.js"></script>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <base href="@base-url">
+ <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"-->
+ <link rel="stylesheet" href="public/fontawesome-free-5.15.3-web/css/all.css">
+<link rel="stylesheet" href="public/css/x.css">
+<title>user management</title>
+</head>
+<body>
+
+<div class="glober-wrap">
+
+
+ <section>
+      <div class="admin-section">
+         <div class="admin-nav">
+                                               
+            <ul>
+               <a style="text-decoration: none;font-size:1.3rem;margin-left:9px;" href="admin/dashboard" style="color:#fff;margin-bottom:10%;font-size:1.3em;">DashBoard</h1> </a>
+               <li><a href="admin/dashboard" style="margin-bottom:10%"> <i class="fas fa-home"></i> Home</a></li>
+                <li><a href="admin/team"style="margin-bottom:10%"> <i class="fas fa-smile"></i> Team</a></li>
+                 <li><a href="admin/notification"style="margin-bottom:10%"><i class="fas fa-bell" aria-hidden="true"></i>Notifications<sup>@notif</sup> </a</li>
+                  <li><a href="admin/recent">Manage HomePage</a></li>
+                  <li><a href="admin/manage/profile">Manage profile</a>
+                  <li><a href="admin/users">Manage Users</a></li>
+                 <li><a href="admin/setting"style="margin-bottom:10%"> <i class="fas fa-cog"></i>setting</a></li>
+                <li><a href="admin/logout"style="margin-bottom:10%"><i class="fas fa-power-off"></i> logout</a></li>
+                  </ul>
+         </div>
+             <div class="side-bar">
+               <nav>
+                  <div class="search"><input type="search" value="search" name="" id=""><input type="submit" value="search"></div>
+<ul class="navigation">                             
+                        <li> <img src="@img" width="60px" height="60px" style="border-radius: 50%;"></i></li>
+                          </ul>   
+                  
+                  </nav>
+
+                  <div class="container">
+                     <div class="wrap">
+                      <div class="j">
+                   <h1>Dash Board</h1><a href="admin/user/add" id="ad"><button id="ad">Add Admin/team </button></a>
+                        </div>
+                   <div class="box">
+                      <div class="box-top">
+                       <table>
+                          <thead>
+                             <th>Username</th>
+                             <th>Email</th>
+                             <th>USerType</th>
+                             <th>Revoke</th>
+                             <th>Undo Revoke</th>
+                             <th>Delete</th>
+                          </thead>
+                          <tbody>
+                      @table_content
+                          </tbody>
+                       </table>
+                     </div>
+                     
+                 
+                   </div>
+                  </div>
+                 
+
+
+                  </div>
+               </div>
+      </div>
+   </section>
+  
+
+</div>
+
+
+</body>
+
+
+</html>
