@@ -1,0 +1,415 @@
+
+
+*,html{
+margin: 0%;
+padding: 0%;                                     
+}
+body{
+height: 100%;
+box-sizing: border-box;     
+
+}
+.glober-wrap{
+height:100vh;  
+width: 100vw;
+overflow: hidden;    
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+background-color: #1d1c1c       
+}
+.glober-wrap > .center_text{
+background-color: #000102;
+margin-top:40px; 
+border-radius: 15px;
+  box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.1);                                      
+}
+.glober-wrap > .center_text > .text{
+background-color: #101011;
+padding: 13px;                 
+}  
+.glober-wrap > .center_text > .text .main-text h1{
+color:#fff;            
+font-size: 1.2rem;                   
+}
+.glober-wrap > .center_text > .text .main-text h1 span{
+color:#ff0000;                            
+}
+.glober-wrap > .center_text > form{
+display: flex;
+flex-direction: column;
+padding: 15px 20px;
+                                        
+}
+.glober-wrap > .center_text > form >  .btn{
+  padding: 15px 15px;
+display: flex;
+align-items: center;
+justify-content: right;
+                                        
+}
+
+.glober-wrap > .center_text > form >  .input{
+ 
+  padding: 10px 5px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+                                     
+}
+.glober-wrap > .center_text > form > .btn > button{
+  padding:9px 20px 9px 20px;
+  background-color: #000fff;
+ outline: none;
+ border-radius: 5px;
+ border: none;
+ cursor: pointer;
+      float: right;                                  
+}
+.glober-wrap > .center_text > form  .btn .foget{
+  color:#ff0000;
+  text-decoration: none;
+                                        
+}
+
+
+.glober-wrap > .center_text > form >.input  input{
+width:400px;
+padding: 10px;    
+margin: 4px;
+border-radius: 15px;
+outline: none;
+border: none;                                    
+}
+
+nav{
+width: 100%;
+z-index: 400;
+box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);     
+position: fixed;
+top:0%;
+background-color: #fff;
+
+}
+nav .social{
+display: flex;
+height: 40px;
+align-items: center;     
+border-bottom: 1px solid #eeeeee;                                  
+}
+nav .social {
+margin-left: 5rem;                                      
+}
+nav .social .x{
+margin-left: 1rem;                                      
+}
+nav .navigation{
+display: flex;    
+padding: 10px;    
+margin-left: 5rem;    
+align-items: center;                           
+}
+nav .navigation li{
+list-style: none;
+margin: 0%;      
+padding: 0%;                                   
+}
+nav .navigation li a{
+list-style: none;
+margin-left: 1rem;     
+text-decoration:none;                                    
+}
+nav .navigation .logo{
+margin: 0%;
+padding: 0%;
+font-size: 3.2rem;
+font-weight: 40;  
+align-items: center;   
+margin-left: 5rem;                                     
+}
+nav .navigation input[type="submit"]{
+width: 400px;
+height: 40px;
+border:none;
+outline:none;
+background-color: #000fff;
+color:#fff;
+position: relative;
+top:6%;
+left:14px;
+cursor: pointer;
+transition: all 2s ease;
+}
+nav .navigation input[type="submit"]:hover{
+background: #000000;
+}
+nav .logo-mobile{display: none;}
+nav .login-content a{
+margin-left: 8rem;   
+text-decoration:none;  
+text-transform:uppercase;
+font-size: 1.1rem;                                    
+}
+
+nav  .mobile-first .login-content-moblie{
+display: none;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:724px ){
+
+
+nav .social .x{
+margin: 0%;                                      
+}
+nav .navigation{   
+padding: 0px;    
+margin: 0%;    
+
+}
+
+}
+
+
+
+
+
+
+
+
+@media(max-width: 1289px){
+body{
+
+overflow-x: hidden;                                    
+}
+
+nav{
+margin: 0%;padding-right: 53px;
+background-color:#bedbfb;
+
+
+}
+
+nav .mobile-first .toggle-menu{
+position: relative;                                       
+width: 40px;
+height: 30px;
+background-color: #eeeeee;
+align-items: center;
+margin: 0% auto;   
+display: flex;
+justify-content: center;
+align-content: center;
+border-radius: 10px;
+align-items: center;       
+cursor: pointer;
+overflow: hidden;                            
+}
+nav .mobile-first .toggle-menu span{
+position: absolute;                                      
+width: 30px;
+height: 4px;
+background-color: #000fff;
+border-radius: 4px;
+transform: 0.5s;      
+align-items: center;       
+margin: 0% auto;                     
+}
+nav .mobile-first .toggle-menu span:nth-child(1){
+transform: translateY(-9px);                                
+width: 25px;
+right: 15px;
+
+}
+nav .mobile-first .toggle-menu.active span:nth-child(1){
+transform: translateY(0px) rotate(45deg);                                
+width: 25px;
+right: 15px;
+transition-delay: 0.125s;
+
+}
+nav .mobile-first .toggle-menu span:nth-child(2){
+transform: translateY(9px);                                
+width: 20px;
+right: 15px;
+
+}
+nav .mobile-first .toggle-menu.active span:nth-child(2){
+transform: translateY(0px) rotate(315deg);                                
+width: 25px;
+right: 15px;
+
+}
+nav .mobile-first .toggle-menu.active span:nth-child(3){
+transform: translateX(60px);                                
+width: 25px;
+right: 15px;
+
+}
+nav .navigation{
+height: 300px;
+width: 100%;
+position: absolute;
+display: none;
+flex-direction: column;  
+margin: 0% auto;
+align-items: right;      
+padding-right:49px;          
+padding-bottom: 29px;
+background-color: #000fff;
+z-index: 900;
+}   
+nav .navigation.active{
+display: flex;
+z-index: 9000;
+animation: captionText 5s ease forwards;
+animation-delay: 1.4s; 
+}   
+nav .navigation li{
+width: 100%;
+margin:0%;      
+padding: 0%;     
+
+}  
+
+nav .navigation li a{
+float: left;
+position: relative;
+width: 100%;
+left: 2%;
+margin:2%;      
+padding: 0%;     
+color:#fff;                              
+}   
+nav .navigation .image-icon{
+display: none;                                   
+}    
+nav .mobile-first{
+width: 100vw;
+display: flex;
+justify-content: space-between;   
+align-content: center;
+align-items: center;                               
+} 
+nav  .mobile-first .logo-mobile{
+display: block;                                        
+margin: 0%;
+padding: 0%;
+font-size: 3.2rem;
+font-weight: 40;  
+align-items: center;
+margin-left: 1px;                                          
+}    
+nav  .mobile-first .login-content-moblie{
+
+margin-top: 2px;
+height: 50px; 
+width: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+}    
+nav  .mobile-first .login-content-moblie a{
+align-items: center;   
+margin: 0%;
+padding: 0%;
+z-index: 600;
+text-decoration: none;                          
+}    
+nav .navigation .logo{
+display: none;                                     
+}  
+nav .login-content a{
+display: none;                                
+}
+
+nav .navigation input[type="submit"]{
+display: none;
+}  
+nav .mobile-first .login-content-moblie{
+position: relative;
+right: 5%;   
+text-decoration:none;  
+font-size: 19px;     
+align-items: center;                              
+}    
+
+
+.glober-wrap > .center_text > form >  .input{
+ 
+ padding: 10px 5px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+                                    
+}
+.glober-wrap > .center_text > .text{
+margin-top:30%;               
+} 
+.glober-wrap > .center_text > .text .main-text h1{        
+font-size: 0.8rem;                   
+}
+.glober-wrap > .center_text > form >.input  input{
+width:300px;
+                                 
+}
+.glober-wrap{
+
+overflow-y: auto;    
+   
+}
+}
+
+@media(max-width: 697px){
+nav .social{
+display: none;                                     
+}
+nav  .mobile-first .logo-mobile{
+display: block;                                        
+
+padding: 0%;
+font-size: 1.2rem;
+font-weight: bolder;  
+align-items: center;
+margin-top: 01%;
+margin-left: 1rem;                                          
+} 
+
+
+
+nav .navigation{      
+padding-bottom: 49px;                       
+}    
+nav .navigation li{
+width: 100%;
+margin:2%;      
+padding: 0%;     
+
+}
+.abt {
+position: relative;
+left:-17%;
+
+}
+
+}
+

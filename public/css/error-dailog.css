@@ -1,0 +1,49 @@
+.error-dialog {
+        width: 100vw;
+        background-color: transparent;
+        position: absolute;
+        z-index: 2;
+        top: 10%;
+        animation: bring-down .5s ease-in-out;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      .error-dialog .error {
+        background-color: transparent;
+      }
+      .error-dialog .error p {
+       padding: 5px 10px;
+       margin: 2px 10px;
+       border-radius: 6px;
+        width: 350px;
+       height: auto;
+       color: #ffffff;
+       text-align: center;
+      }
+      .error-dialog .error p.danger {
+        background-color: rgb(255, 6, 6);
+      }
+      .error-dialog .error p.success {
+       background-color: rgb(14, 185, 74);
+     }
+     
+      
+     @keyframes bring-down {
+        0% { top: 7%;  }
+        100% { top: 10%;}
+      }
+      @media(min-width:704px ){
+
+
+        .error-dialog {
+        top: 19%;
+        }
+         
+      @keyframes bring-down {
+        0% { top: 10%;  }
+        100% { top: 19%;}
+      }
+        }
+        
+             

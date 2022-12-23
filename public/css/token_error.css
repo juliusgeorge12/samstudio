@@ -1,0 +1,46 @@
+ body {
+        margin: 0;
+ }
+.container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f9f9f9;
+        height: 100vh;
+ }
+ .modal {
+        width: 40vw;
+        height: 50vh;
+        background-color: #fdfdfd;
+        border-radius: 20px;
+        box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.6) ,
+      2px 2px 10px rgba(0, 0, 0, 0.1);  
+ }
+ .modal h3 {
+        background-color: rgb(56, 53, 53);
+        background-image: linear-gradient( rgb(56, 53, 53) ,
+        rgb(56, 53, 53) , rgb(56, 53, 53),
+         rgb(96, 92, 92) , rgb(139, 135, 135));
+        margin: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 20px 10px;
+        color: #fff;
+        text-align: center;
+        font-weight: 900;
+        font-size: 18px;
+ }
+ .modal p {
+        margin: 15% 10px;
+        padding: 2px 10px;
+        text-align: center;
+        color: #ff0000;
+        font-size: 18px;
+        font-weight: 600;
+ }
+ @media screen and (min-width: 900px) {
+       .modal p {
+        padding : 10px 30px;
+       } 
+ }
